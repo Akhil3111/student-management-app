@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <style>
+        body { font-family: sans-serif; display: grid; place-items: center; min-height: 100vh; background-color: #f9f9f9; }
+        form { background: #fff; border: 1px solid #ccc; padding: 25px; border-radius: 12px; }
+        div { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input { width: 300px; padding: 8px; border: 2px solid #ddd; border-radius: 4px; }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <form action="addStudent" method="POST">
+        <h2>Add New Student</h2>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="studentName" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="studentEmail" required>
+        </div>
+        <button type="submit">Add Student</button>
+    </form>
+</body>
+</html>
